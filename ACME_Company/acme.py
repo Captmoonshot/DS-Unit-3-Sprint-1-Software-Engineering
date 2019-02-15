@@ -13,7 +13,7 @@ class Product:
 		self.weight = 20
 		self.flammability = 0.5
 		self.identifier = int(random.uniform(1000000, 9999999))
-		self.stealability = defaultdict(float)
+		
 
 	def add_product(self, product_type):
 		if isinstance(product_type, str):
@@ -45,17 +45,17 @@ class Product:
 	"""
 
 	def stealability(self):
-		if (Product.price / Product.weight) < 0.5:
+		if (self.price / self.weight) < 0.5:
 			print("kinda stealable...")
-		elif (Product.price / Product.weight) >= 0.5 and (Product.price / Product.weight) < 1.0:
+		elif (self.price / self.weight) >= 0.5 and (self.price / self.weight) < 1.0:
 			print("Kinda stealable.")
 		else:
 			print("Very stealable")
 
 	def explode(self):
-		if (Product.weight * Product.flammability) < 10.0:
+		if (self.weight * self.flammability) < 10.0:
 			print("...fizzle")
-		elif (Product.weight * Product.flammability) >= 10 and (Product.weight * Product.flammability) < 50:
+		elif (self.weight * self.flammability) >= 10 and (self.weight * self.flammability) < 50:
 			print("...boom!")
 		else:
 			print("...BABOOM!")
@@ -72,12 +72,12 @@ class BoxingGlove(Product):
 		print("...it's a glove")
 
 	def punch(self):
-		if BoxingGlove.weight < 5:
+		if self.weight < 5:
 			print("That tickles")
-		elif BoxingGlove.weight >= 5 and BoxingGlove.weight < 15:
+		elif self.weight >= 5 and self.weight < 15:
 			print("Hey that hurt!")
 		else:
-			print("OUCH")
+			print("OUCH!")
 
 
 

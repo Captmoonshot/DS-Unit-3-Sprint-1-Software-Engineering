@@ -231,9 +231,24 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+
+  ### Answer: One of the most important things would be to make clean commentary on what 
+  you're doing because other people do not think the same way as your do.  So even a simple
+  docstring at the beginning of every function can help.  What also would help greatly is 
+  constructive criticism instead of berating the coder since a lot of people may suffer from
+  imposter syndrome.  
+
+
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+
+ ### Answer: A team of engineers and data scientists can run into coordination problems
+ that arise of diferent programs having different dependencies on different machines with 
+ different operating systems.  This can be especially problematic because there's a kind
+ of think line of demarcation between data scientists and software engineers by default.  
+ By shipping entire operating systems with all the correct
+ depencies, everyone can get on the same page and reproduce exactly the same results.
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
